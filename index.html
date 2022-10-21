@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="https://kit.fontawesome.com/0b7be6448a.js" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/ultimos.js"></script> 
+    <script src="./js/valorados.js"></script>
+    <script src="./js/autores.js"></script>
+    <script src="./js/categorias.js"></script>
+
+</head>
+<body onload="ajax(), ajax2(), ajax3(), ajax4()">
+
+    <div class="container-fluid bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#ultimos-cursos">Últimos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#mejor-valorados">Valorados</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#autores">Autores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#categorias">Categorías</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" id="buscador" type="search" placeholder="Buscar" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </div>
+
+    
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/web-1935737_1920.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/productivity-1995786_1920.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+<h1> DESARROLLO DE PROYECTOS SOFTWARE </h1>
+   
+<div class = "container">
+      <i class="fa-solid fa-2x fa-graduation-cap"></i>
+      <span>MÁS DE 1000 CURSOS</span>
+      <i class="fa-solid fa-2x fa-envelope"></i>
+      <span>CONTÁCTANOS</span>
+      <i class="fa-solid fa-2x fa-building-columns"></i>
+      <span>UNIVERSIDAD POLITÉCNICA</span> 
+</div>
+
+<div id="ultimos-cursos">
+<h2> CURSOS MÁS RECIENTES </h2>
+<p id="response"></p>
+</div>
+
+<div id="mejor-valorados">
+<h2> CURSOS MEJOR VALORADOS</h2>
+<p id="response2"></p>
+</div>
+
+<div id="autores">
+<h2> AUTORES </h2>
+<p id="response3"></p>
+</div>
+
+<div id="categorias">
+  <h2> CATEGORÍAS </h2>
+  <p id="response4"></p>
+  </div>
+
+
+ <footer>
+  Fernando Baviera Boluda - 2022
+ </footer> 
+</body>
+</html>
