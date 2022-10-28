@@ -1,0 +1,2 @@
+No he podido implementar en cards las peticiones ajax, anterior a la práctica no tenía demasiada experiencia programando en estos lenguajes y he tenido dificultadas en aspectos más técnicos.
+La lista de commits si está completa, en el último dejo el intento del código de la implementación que falta, el index lo he dejado de forma que no se viese la carta mal.
